@@ -54,7 +54,7 @@ class EmailService:
         """
 
         otp = TokenService.create_otp_token()
-        # print('otp ==> ',otp)
+        print('otp ==> ',otp)
         subject = 'Email Verification'
         body = f"Thank you for registering with {cls.app.app_name}!\n\n" \
                f"To complete your registration, please enter the following code: {otp}\n\n" \

@@ -1,7 +1,6 @@
 import asyncio
 
 from apps.accounts.faker.data import FakeUser
-from apps.products.faker.data import FakeProduct
 
 if __name__ == "__main__":
     from fastapi import FastAPI
@@ -20,6 +19,3 @@ if __name__ == "__main__":
 
     # --- Demo Users ---
     FakeUser.populate_members()
-
-    # --- Demo Products ---
-    asyncio.run(FakeProduct.populate_30_products())
